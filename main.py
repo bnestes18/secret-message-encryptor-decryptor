@@ -16,6 +16,10 @@ def main_screen():
     image_icon = PhotoImage(file='key-lock.gif')
     screen.iconphoto(True, image_icon)
 
+    def reset():
+        code.set("")
+        textbox1.delete(1.0,END)
+
     # Title
     screen.title("Secret Message Encryptor/Decryptor")
 
